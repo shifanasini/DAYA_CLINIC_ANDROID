@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    android:background="@drawable/round_border"
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@drawable/round_border"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginRight="24dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="DAYA HOMEOPATHY"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginRight="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="24dp"
+            android:text="BOOK YOUR FAVOURITE DOCTOR YOUR WISH TIME"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageButton
+                android:id="@+id/btn_booking"
+                android:layout_width="105dp"
+                android:layout_height="93dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/booking"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/btn_contact"
+                android:layout_width="105dp"
+                android:layout_height="93dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/contact"
+                app:layout_constraintBottom_toTopOf="@+id/txt_contact"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_tip" />
+
+            <ImageButton
+                android:id="@+id/btn_tratment"
+                android:layout_width="105dp"
+                android:layout_height="93dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/treatments"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_profile" />
+
+            <ImageButton
+                android:id="@+id/btn_tips"
+                android:layout_width="105dp"
+                android:layout_height="93dp"
+                android:layout_marginStart="104dp"
+                android:layout_marginLeft="104dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/tips"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btn_tratment"
+                app:layout_constraintTop_toBottomOf="@+id/txt_doctors" />
+
+            <ImageButton
+                android:id="@+id/btn_profile"
+                android:layout_width="105dp"
+                android:layout_height="93dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/profile"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_booking" />
+
+            <ImageButton
+                android:id="@+id/btn_doctors"
+                android:layout_width="105dp"
+                android:layout_height="93dp"
+                android:layout_marginStart="112dp"
+                android:layout_marginLeft="112dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/doctor"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btn_profile"
+                app:layout_constraintTop_toBottomOf="@+id/txt_about" />
+
+            <ImageButton
+                android:id="@+id/btn_about"
+                android:layout_width="103dp"
+                android:layout_height="95dp"
+                android:layout_marginStart="104dp"
+                android:layout_marginLeft="104dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/about"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btn_booking"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_booking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="BOOKING"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/btn_booking"
+                app:layout_constraintStart_toStartOf="@+id/btn_booking"
+                app:layout_constraintTop_toBottomOf="@+id/btn_booking" />
+
+            <TextView
+                android:id="@+id/txt_about"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="ABOUT DAYA"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/btn_about"
+                app:layout_constraintStart_toStartOf="@+id/btn_about"
+                app:layout_constraintTop_toBottomOf="@+id/btn_about" />
+
+            <TextView
+                android:id="@+id/txt_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="PROFILE"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/btn_profile"
+                app:layout_constraintStart_toStartOf="@+id/btn_profile"
+                app:layout_constraintTop_toBottomOf="@+id/btn_profile" />
+
+            <TextView
+                android:id="@+id/txt_doctors"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="OUR DOCTORS"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/btn_doctors"
+                app:layout_constraintStart_toStartOf="@+id/btn_doctors"
+                app:layout_constraintTop_toBottomOf="@+id/btn_doctors" />
+
+            <TextView
+                android:id="@+id/txt_treatment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                android:text="TREATMENTS"
+                app:layout_constraintEnd_toEndOf="@+id/btn_tratment"
+                app:layout_constraintStart_toStartOf="@+id/btn_tratment"
+                app:layout_constraintTop_toBottomOf="@+id/btn_tratment" />
+
+            <TextView
+                android:id="@+id/txt_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="HEALTH TIPS"
+                app:layout_constraintEnd_toEndOf="@+id/btn_tips"
+                app:layout_constraintStart_toStartOf="@+id/btn_tips"
+                app:layout_constraintTop_toBottomOf="@+id/btn_tips"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txt_contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="24dp"
+                android:text="CONTACT US"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/btn_contact"
+                app:layout_constraintStart_toStartOf="@+id/btn_contact"
+                app:layout_constraintTop_toBottomOf="@+id/btn_contact" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
